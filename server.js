@@ -4,11 +4,11 @@ const app = express()
 app.use(express.json())
 
 
-app.use("/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.status(200).json({status:true,message:"test server running"})
 })
 
-app.use("/test",(req,res)=>{
+app.get("/test",(req,res)=>{
     res.status(200).json({status:true,message:"test route"})
 })
 
