@@ -8,6 +8,10 @@ app.use("/",(req,res)=>{
     res.status(200).json({status:true,message:"test server running"})
 })
 
+app.use("/test",(req,res)=>{
+    res.status(200).json({status:true,message:"test route"})
+})
+
 app.listen(4000,()=>{
     console.log("connected");
 })
