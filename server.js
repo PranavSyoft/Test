@@ -12,6 +12,10 @@ app.get("/test",(req,res)=>{
     res.status(200).json({status:true,message:"test route"})
 })
 
+app.get("/test2",(req,res)=>{
+    res.status(200).json({status:true,message:"test route 2"})
+})
+
 app.listen(4000,()=>{
     console.log("connected");
 })
